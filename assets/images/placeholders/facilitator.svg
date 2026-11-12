@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" role="img" aria-label="Facilitator photo placeholder" preserveAspectRatio="xMidYMid slice">
+<rect width="400" height="480" fill="#F3DFC0"/>
+<circle cx="200" cy="190" r="72" fill="#111111" opacity=".9"/>
+<path d="M60 480 C60 360 130 300 200 300 C270 300 340 360 340 480 Z" fill="#111111" opacity=".9"/>
+<text x="200" y="448" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#F3DFC0">PHOTO PLACEHOLDER</text>
+</svg>

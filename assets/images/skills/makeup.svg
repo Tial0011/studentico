@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="makeup illustration" preserveAspectRatio="xMidYMid slice">
+<rect width="400" height="300" fill="#FFA500"/>
+<circle cx="330" cy="40" r="120" fill="#111111" opacity=".16"/>
+<circle cx="40" cy="290" r="90" fill="#111111" opacity=".14"/>
+<g fill="none" stroke="#111111" stroke-width="2" opacity=".35">
+  <rect x="26" y="26" width="348" height="248" rx="18"/>
+</g>
+<g transform="translate(110 40) scale(1.8)">
+      <rect x="36" y="52" width="28" height="36" rx="4" fill="#FFFFFF"/>
+      <rect x="40" y="38" width="20" height="16" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M40 38 V22 Q40 10 52 8 L60 14 V38 Z" fill="#111111" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+      <rect x="36" y="66" width="28" height="6" fill="#111111"/></g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="barbing illustration" preserveAspectRatio="xMidYMid slice">
+<rect width="400" height="300" fill="#FFA500"/>
+<circle cx="330" cy="40" r="120" fill="#111111" opacity=".16"/>
+<circle cx="40" cy="290" r="90" fill="#111111" opacity=".14"/>
+<g fill="none" stroke="#111111" stroke-width="2" opacity=".35">
+  <rect x="26" y="26" width="348" height="248" rx="18"/>
+</g>
+<g transform="translate(110 40) scale(1.8)">
+      <rect x="38" y="14" width="24" height="72" rx="12" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
+      <clipPath id="bp"><rect x="38" y="14" width="24" height="72" rx="12"/></clipPath>
+      <g clip-path="url(#bp)" stroke="#111111" stroke-width="7">
+        <line x1="30" y1="26" x2="70" y2="10"/><line x1="30" y1="44" x2="70" y2="28"/>
+        <line x1="30" y1="62" x2="70" y2="46"/><line x1="30" y1="80" x2="70" y2="64"/>
+        <line x1="30" y1="98" x2="70" y2="82"/></g>
+      <rect x="34" y="8" width="32" height="8" rx="4" fill="#111111"/><rect x="34" y="84" width="32" height="8" rx="4" fill="#111111"/></g>
+</svg>

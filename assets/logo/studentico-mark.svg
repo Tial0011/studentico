@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Studentico mark">
+<rect width="64" height="64" rx="14" fill="#111111"/>
+<g transform="translate(6 10)">
+  <path d="M26 2 L52 14 L26 26 L0 14 Z" fill="#FFA500"/>
+  <path d="M10 22 V34 C10 40 42 40 42 34 V22 L26 30 Z" fill="#FFF6E9"/>
+</g></svg>

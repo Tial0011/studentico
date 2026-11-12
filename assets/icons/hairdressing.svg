@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="hairdressing">
+      <circle cx="34" cy="70" r="11" fill="none" stroke="#111111" stroke-width="5"/>
+      <circle cx="66" cy="70" r="11" fill="none" stroke="#FFA500" stroke-width="5"/>
+      <path d="M41 61 L70 14" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+      <path d="M59 61 L30 14" stroke="#FFA500" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="50" cy="42" r="3.5" fill="#111111"/></svg>

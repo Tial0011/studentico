@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" role="img" aria-label="Abstract pathway illustration" preserveAspectRatio="xMidYMid slice">
+<rect width="600" height="700" fill="#111111"/>
+<circle cx="470" cy="150" r="200" fill="#FFA500"/>
+<circle cx="470" cy="150" r="120" fill="#111111" opacity=".12"/>
+<path d="M-20 700 C120 560 200 520 260 420 C320 320 360 300 440 240 L620 160 V700 Z" fill="#FFF6E9"/>
+<path d="M60 700 C180 590 260 560 320 470 C380 380 420 350 500 300" fill="none" stroke="#FFA500" stroke-width="14" stroke-dasharray="2 26" stroke-linecap="round"/>
+<g fill="#111111">
+  <path d="M300 250 L360 222 L420 250 L360 278 Z"/>
+  <path d="M322 262 V300 C322 316 398 316 398 300 V262 L360 280 Z"/>
+</g>
+<rect x="418" y="246" width="5" height="46" rx="2.5" fill="#111111"/>
+<circle cx="420.5" cy="298" r="7" fill="#FFA500"/>
+</svg>

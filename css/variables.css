@@ -1,0 +1,75 @@
+/* ==========================================================================
+   VARIABLES — design tokens (single source of truth for the visual system)
+   ========================================================================== */
+:root {
+  /* Brand palette */
+  --cream: #FFF6E9;
+  --orange: #FFA500;
+  --navy: #050510;
+  --black: #111111;
+  --white: #FFFFFF;
+
+  /* Supporting shades */
+  --cream-deep: #F6E7CE;
+  --cream-line: #E8D5B5;
+  --orange-ink: #9A5A00;      /* orange readable as small text on cream (AA) */
+  --orange-soft: #FFE3B0;
+  --ink-soft: #3A3A40;
+  --ink-muted: #5E5A55;
+  --navy-soft: #0E0E22;
+  --navy-line: rgba(255, 246, 233, 0.16);
+
+  /* Semantic */
+  --bg: var(--cream);
+  --fg: var(--black);
+
+  /* Typography */
+  --font-display: 'Anton', 'Oswald', Impact, 'Arial Narrow Bold', sans-serif;
+  --font-condensed: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: 'DM Sans', 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+
+  /* Fluid type scale */
+  --fs-hero: clamp(2.7rem, 6.6vw, 6.4rem);
+  --fs-h1: clamp(2.5rem, 6vw, 5rem);
+  --fs-h2: clamp(2.1rem, 4.6vw, 3.9rem);
+  --fs-h3: clamp(1.35rem, 2.2vw, 1.75rem);
+  --fs-lead: clamp(1.05rem, 1.5vw, 1.25rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-eyebrow: 0.78rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 6.5rem;
+  --section-y: clamp(4.5rem, 9vw, 8rem);
+
+  /* Layout */
+  --container: 1240px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  --header-h: 76px;
+
+  /* Shape */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* Depth */
+  --shadow-sm: 0 1px 2px rgba(17, 17, 17, 0.06), 0 2px 8px rgba(17, 17, 17, 0.05);
+  --shadow-md: 0 10px 30px -10px rgba(17, 17, 17, 0.25);
+  --shadow-lg: 0 30px 60px -25px rgba(17, 17, 17, 0.4);
+  --border: 1.5px solid var(--black);
+  --border-soft: 1px solid var(--cream-line);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.8, 0.24, 1);
+  --dur: 0.45s;
+}

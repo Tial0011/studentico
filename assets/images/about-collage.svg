@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Students collaborating illustration" preserveAspectRatio="xMidYMid slice">
+<rect width="800" height="600" fill="#FFF6E9"/>
+<circle cx="620" cy="140" r="170" fill="#FFA500"/>
+<rect x="60" y="330" width="320" height="220" rx="24" fill="#111111"/>
+<rect x="420" y="250" width="300" height="300" rx="24" fill="#FFA500" opacity=".85"/>
+<g fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round"><path d="M90 150 H300"/><path d="M90 190 H240"/><path d="M90 230 H280"/></g>
+</svg>

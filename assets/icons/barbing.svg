@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="barbing">
+      <rect x="38" y="14" width="24" height="72" rx="12" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
+      <clipPath id="bp"><rect x="38" y="14" width="24" height="72" rx="12"/></clipPath>
+      <g clip-path="url(#bp)" stroke="#FFA500" stroke-width="7">
+        <line x1="30" y1="26" x2="70" y2="10"/><line x1="30" y1="44" x2="70" y2="28"/>
+        <line x1="30" y1="62" x2="70" y2="46"/><line x1="30" y1="80" x2="70" y2="64"/>
+        <line x1="30" y1="98" x2="70" y2="82"/></g>
+      <rect x="34" y="8" width="32" height="8" rx="4" fill="#111111"/><rect x="34" y="84" width="32" height="8" rx="4" fill="#111111"/></svg>

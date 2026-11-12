@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="nails lash illustration" preserveAspectRatio="xMidYMid slice">
+<rect width="400" height="300" fill="#FFF6E9"/>
+<circle cx="330" cy="40" r="120" fill="#111111" opacity=".16"/>
+<circle cx="40" cy="290" r="90" fill="#111111" opacity=".14"/>
+<g fill="none" stroke="#111111" stroke-width="2" opacity=".35">
+  <rect x="26" y="26" width="348" height="248" rx="18"/>
+</g>
+<g transform="translate(110 40) scale(1.8)">
+      <path d="M10 56 C28 30 72 30 90 56 C72 78 28 78 10 56 Z" fill="#FFFFFF" stroke="#FFA500" stroke-width="4"/>
+      <circle cx="50" cy="56" r="14" fill="#111111"/><circle cx="50" cy="56" r="6" fill="#FFA500"/>
+      <g stroke="#FFA500" stroke-width="4" stroke-linecap="round">
+        <line x1="16" y1="46" x2="8" y2="36"/><line x1="30" y1="38" x2="25" y2="26"/><line x1="50" y1="34" x2="50" y2="20"/>
+        <line x1="70" y1="38" x2="75" y2="26"/><line x1="84" y1="46" x2="92" y2="36"/></g></g>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="makeup">
+      <rect x="36" y="52" width="28" height="36" rx="4" fill="#111111"/>
+      <rect x="40" y="38" width="20" height="16" fill="#FFFFFF" stroke="#111111" stroke-width="3"/>
+      <path d="M40 38 V22 Q40 10 52 8 L60 14 V38 Z" fill="#FFA500" stroke="#111111" stroke-width="3" stroke-linejoin="round"/>
+      <rect x="36" y="66" width="28" height="6" fill="#FFA500"/></svg>
