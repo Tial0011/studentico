@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#111111"/><path d="M32 14 L56 26 L32 38 L8 26 Z" fill="#FFA500"/><path d="M16 34 V44 C16 50 48 50 48 44 V34 L32 42 Z" fill="#FFF6E9"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+	<defs>
+		<clipPath id="seal-clip"><circle cx="32" cy="32" r="28"/></clipPath>
+	</defs>
+	<rect width="64" height="64" fill="#FFFFFF"/>
+	<g fill="#111111">
+		<g clip-path="url(#seal-clip)">
+			<text x="32" y="43" text-anchor="middle" font-family="'Bodoni MT', Didot, Georgia, 'Times New Roman', serif" font-size="43" font-weight="700" letter-spacing="-10">ST</text>
+			<rect x="4" y="28" width="56" height="10" fill="#FFFFFF"/>
+			<path d="M4 28h13M47 28h13M4 38h13M47 38h13" fill="none" stroke="#111111" stroke-width="1.5"/>
+		</g>
+		<circle cx="32" cy="32" r="29" fill="none" stroke="#111111" stroke-width="1.5"/>
+		<text x="32" y="35.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="2.8" letter-spacing="0.45">STUDENTICO</text>
+	</g>
+</svg>

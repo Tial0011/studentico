@@ -1,8 +1,14 @@
 /* ==========================================================================
    LAYOUT — reset, containers, section scaffolding, grids
    ========================================================================== */
-*, *::before, *::after { box-sizing: border-box; }
-* { margin: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
 
 html {
   scroll-behavior: smooth;
@@ -10,13 +16,39 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body { min-height: 100vh; overflow-x: hidden; }
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+#main {
+  min-height: clamp(22rem, 58vh, 46rem);
+}
 
-img, svg, picture { display: block; max-width: 100%; }
-img { height: auto; }
-a { color: inherit; text-decoration: none; }
-ul, ol { list-style: none; padding: 0; }
-button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+img,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}
+img {
+  height: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
 
 :focus-visible {
   outline: 3px solid var(--orange);
@@ -35,11 +67,20 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   border-radius: var(--radius-sm);
   transition: top 0.2s;
 }
-.skip-link:focus { top: var(--space-4); }
+.skip-link:focus {
+  top: var(--space-4);
+}
 
 .sr-only {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .container {
@@ -47,35 +88,75 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   margin-inline: auto;
 }
 
-.section { position: relative; padding-block: var(--section-y); }
-.section--cream { background: var(--cream); }
-.section--sand  { background: var(--cream-deep); }
-.section--black { background: var(--black); color: var(--cream); }
-.section--navy  { background: var(--navy); color: var(--cream); }
-.section--orange { background: var(--orange); color: var(--black); }
+.section {
+  position: relative;
+  padding-block: var(--section-y);
+}
+.section--cream {
+  background: var(--cream);
+}
+.section--sand {
+  background: var(--cream-deep);
+}
+.section--black {
+  background: var(--black);
+  color: var(--cream);
+}
+.section--navy {
+  background: var(--navy);
+  color: var(--cream);
+}
+.section--orange {
+  background: var(--orange);
+  color: var(--black);
+}
 
-.section-head { display: grid; gap: var(--space-5); margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.section-head {
+  display: grid;
+  gap: var(--space-5);
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
 .section-head--split {
   grid-template-columns: 1.2fr 1fr;
   align-items: end;
   gap: var(--space-7);
 }
-.section-head--center { text-align: center; justify-items: center; }
-.section-head--center p { margin-inline: auto; }
+.section-head--center {
+  text-align: center;
+  justify-items: center;
+}
+.section-head--center p {
+  margin-inline: auto;
+}
 
 /* Scroll-reveal */
 [data-reveal] {
   opacity: 0;
   transform: translateY(26px);
-  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+  transition:
+    opacity 0.8s var(--ease),
+    transform 0.8s var(--ease);
   transition-delay: var(--reveal-delay, 0ms);
 }
-[data-reveal].is-visible { opacity: 1; transform: none; }
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  [data-reveal] { opacity: 1; transform: none; transition: none; }
-  *, *::before, *::after { animation: none !important; }
+  html {
+    scroll-behavior: auto;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+  }
 }
 
 /* No-JS fallback */

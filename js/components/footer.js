@@ -1,8 +1,8 @@
-import { brand, navLinks, skills, socials, contact } from '../data/content.js';
-import { escapeHtml, mapHtml, icon } from '../utils/helpers.js';
+import { brand, navLinks, skills, socials, contact } from "../data/content.js";
+import { escapeHtml, mapHtml, icon } from "../utils/helpers.js";
 
 export const footer = {
-  mount: '#site-footer',
+  mount: "#site-footer",
 
   render() {
     const year = new Date().getFullYear();
@@ -10,9 +10,8 @@ export const footer = {
       <div class="container">
         <div class="footer__top">
           <div class="footer__brand">
-            <img src="assets/logo/studentico-logo-light.svg" alt="Studentico" width="190" height="47">
-            <p class="footer__tagline">${escapeHtml(brand.tagline)}</p>
-            <p>${escapeHtml(brand.description)}</p>
+            <img src="assets/logo/studentico-logo-light.svg" alt="Studentico" width="960" height="256">
+            <p>Affordable essentials, practical skills, and meaningful opportunities.</p>
             <div class="footer__socials">
               ${mapHtml(socials, (s) => `<a href="${s.href}" aria-label="${escapeHtml(s.label)}">${icon(s.path, { size: 20 })}</a>`)}
             </div>
