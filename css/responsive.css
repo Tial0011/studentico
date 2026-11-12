@@ -106,6 +106,11 @@
   :root {
     --header-h: 68px;
   }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    height: var(--header-h);
+  }
   /* backdrop-filter would make the fixed menu panel position relative to the header */
   .site-header {
     background: var(--cream);
