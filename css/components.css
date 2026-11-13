@@ -169,28 +169,19 @@
 }
 
 .nav {
-  position: relative;
-  isolation: isolate;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between;
-  gap: var(--space-5);
+  gap: clamp(0.75rem, 1.8vw, 1.5rem);
   height: var(--header-h);
 }
-.nav::before {
-  position: absolute;
-  z-index: -1;
-  inset: 5px 0;
-  border: 1px solid rgba(255, 255, 255, 0.82);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.34);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.68),
-    0 8px 22px rgba(17, 17, 17, 0.07);
-  backdrop-filter: saturate(1.5) blur(22px);
-  -webkit-backdrop-filter: saturate(1.5) blur(22px);
-  content: "";
-  pointer-events: none;
+.nav.container {
+  width: min(100% - 2 * var(--gutter), 1600px);
+}
+.nav__logo {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
 }
 .nav__logo img {
   height: 76px;
@@ -201,9 +192,22 @@
 }
 
 .nav__panel {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+}
+.nav__cta--header {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+  margin-left: 0;
+  white-space: nowrap;
+}
+.nav__cta-label-mobile,
+.nav__cta--drawer {
+  display: none;
 }
 .nav__links {
   display: flex;
@@ -249,6 +253,8 @@
 
 .nav__toggle {
   display: none;
+  grid-column: 3;
+  justify-self: end;
   width: 46px;
   height: 46px;
   border: 1px solid rgba(17, 17, 17, 0.24);

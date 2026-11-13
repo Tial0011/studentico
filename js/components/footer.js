@@ -10,7 +10,7 @@ export const footer = {
       <div class="container">
         <div class="footer__top">
           <div class="footer__brand">
-            <img src="assets/logo/studentico-logo-light.svg" alt="Studentico" width="960" height="256">
+            <img src="assets/logo/studentico-logo-light.svg" alt="Studentico" width="850" height="256">
             <p>Affordable essentials, practical skills, and meaningful opportunities.</p>
             <div class="footer__socials">
               ${mapHtml(socials, (s) => `<a href="${s.href}" aria-label="${escapeHtml(s.label)}">${icon(s.path, { size: 20 })}</a>`)}

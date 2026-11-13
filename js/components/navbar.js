@@ -16,7 +16,11 @@ export const navbar = {
     return `
       <div class="container nav">
         <a class="nav__logo" href="#home" aria-label="Studentico — home">
-          <img src="assets/logo/studentico-logo.svg" alt="Studentico" width="960" height="256">
+          <img src="assets/logo/studentico-logo.svg" alt="Studentico" width="850" height="256">
+        </a>
+        <a class="btn nav__cta nav__cta--header" href="#partnerships">
+          <span class="nav__cta-label-desktop">Support Our Vision</span>
+          <span class="nav__cta-label-mobile">Support</span>
         </a>
         <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu">
           <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
@@ -25,7 +29,7 @@ export const navbar = {
           <ul class="nav__links">
             ${mapHtml(navLinks, (l) => `<li><a class="nav__link" href="${l.href}">${escapeHtml(l.label)}</a></li>`)}
           </ul>
-          <a class="btn nav__cta btn--sm" href="#partnerships">Support Our Vision</a>
+          <a class="btn nav__cta nav__cta--drawer btn--sm" href="#partnerships">Support Our Vision</a>
         </nav>
       </div>`;
   },
