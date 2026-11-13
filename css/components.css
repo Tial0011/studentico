@@ -203,6 +203,10 @@
   grid-row: 1;
   justify-self: end;
   margin-left: 0;
+  margin-right: -8px;
+  padding: 0.72rem 1.2rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
   white-space: nowrap;
 }
 .nav__cta-label-mobile,
@@ -247,7 +251,7 @@
 .nav__link.is-active::after {
   transform: scaleX(1);
 }
-.nav__cta {
+.nav__cta:not(.nav__cta--header) {
   margin-left: var(--space-3);
 }
 
