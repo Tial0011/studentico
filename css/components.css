@@ -203,10 +203,6 @@
   grid-row: 1;
   justify-self: end;
   margin-left: 0;
-  margin-right: -8px;
-  padding: 0.72rem 1.2rem;
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
   white-space: nowrap;
 }
 .nav__cta-label-mobile,
@@ -1577,6 +1573,7 @@
 .footer__brand img {
   height: 58px;
   width: auto;
+  margin-left: -18px;
 }
 .footer__tagline {
   font-family: var(--font-serif);

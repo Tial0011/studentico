@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 256" role="img" aria-label="Studentico — More than a Brand, It's a pathway">
   <defs>
     <clipPath id="seal-clip"><circle cx="176" cy="154" r="94"/></clipPath>
+    <clipPath id="seal-upper"><rect x="80" y="58" width="192" height="80"/></clipPath>
+    <clipPath id="seal-lower"><rect x="80" y="170" width="192" height="80"/></clipPath>
   </defs>
   <g fill="#111111">
     <g clip-path="url(#seal-clip)">
-      <text x="176" y="201" text-anchor="middle" font-family="'Bodoni MT', Didot, Georgia, 'Times New Roman', serif" font-size="132" font-weight="700" letter-spacing="-30">ST</text>
-      <rect x="80" y="138" width="192" height="32" fill="#FFFFFF"/>
+      <text x="176" y="201" text-anchor="middle" clip-path="url(#seal-upper)" font-family="'Bodoni MT', Didot, Georgia, 'Times New Roman', serif" font-size="132" font-weight="700" letter-spacing="-30">ST</text>
+      <text x="176" y="201" text-anchor="middle" clip-path="url(#seal-lower)" font-family="'Bodoni MT', Didot, Georgia, 'Times New Roman', serif" font-size="132" font-weight="700" letter-spacing="-30">ST</text>
       <path d="M80 138h39M233 138h39M80 170h39M233 170h39" fill="none" stroke="#111111" stroke-width="3"/>
     </g>
     <circle cx="176" cy="154" r="96" fill="none" stroke="#111111" stroke-width="3"/>

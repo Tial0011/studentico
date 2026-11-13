@@ -113,8 +113,10 @@
     height: var(--header-h);
   }
   .nav__cta--header {
-    padding: 0.65rem 0.9rem;
-    font-size: 0.78rem;
+    margin-right: -6px;
+    padding: 0.55rem 0.72rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
   }
   .nav__cta-label-desktop {
     display: none;
