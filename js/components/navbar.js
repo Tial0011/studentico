@@ -34,7 +34,7 @@ export const navbar = {
     const toggle = qs(".nav__toggle", root);
     const panel = qs("#nav-panel", root);
     const links = qsa(".nav__link", root);
-    const isMobile = () => window.matchMedia("(max-width: 920px)").matches;
+    const isMobile = () => window.matchMedia("(max-width: 1220px)").matches;
 
     const setOpen = (open) => {
       root.classList.toggle("is-open", open);

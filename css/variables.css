@@ -56,7 +56,7 @@
   /* Layout */
   --container: 1240px;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
-  --header-h: 76px;
+  --header-h: 86px;
 
   /* Shape */
   --radius-sm: 10px;
