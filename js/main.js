@@ -19,7 +19,9 @@ import { ctaSection } from "./components/cta.js";
 import { footer } from "./components/footer.js";
 
 /** Sections rendered inside <main>, in order. */
-const showMainSections = false;
+// Keep the original one-page destinations mounted so hero and navigation links
+// continue to reach their corresponding existing sections.
+const showMainSections = true;
 const sections = showMainSections
   ? [
       hero,
