@@ -16,7 +16,8 @@ export const hero = {
         <div class="hero__copy">
           <p class="eyebrow hero__statement" data-reveal>More than a brand. It's a pathway.</p>
           <h1 class="display-hero hero__title" id="hero-title" data-reveal>
-            <span class="line">Rewriting the student</span>
+            <span class="line">Rewriting</span>
+            <span class="line line--accent">the student</span>
             <span class="line line--outline">experience.</span>
           </h1>
           <p class="hero__promise serif" data-reveal>Building skills. <em>Creating opportunities.</em></p>
@@ -25,7 +26,7 @@ export const hero = {
           </p>
           <div class="hero__actions" data-reveal>
             <a class="btn" href="#skills">Explore Our Skills ${arrow()}</a>
-            <a class="hero__text-link" href="#partnerships">Support Our Vision ${arrow()}</a>
+            <a class="hero__text-link" href="#partnerships"><span><b>Support our vision</b><small>Partner with the pathway</small></span><i>${arrow()}</i></a>
           </div>
           <div class="hero__programme" data-reveal>
             <div class="hero__programme-kicker"><span class="tag tag--dark tag--dot">Programme 1.0</span><span>Now enrolling</span></div>

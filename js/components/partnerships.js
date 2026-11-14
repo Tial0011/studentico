@@ -32,7 +32,7 @@ export const partnershipsSection = {
         </div>
 
         <div class="partners__cta" data-reveal>
-          <p>Help us open doors for the students who need them.</p>
+          <div class="partners__cta-copy"><span>Build impact with us</span><p>Help us open doors for the students who need them.</p></div>
           <a class="btn" href="#get-in-touch">Become a Studentico partner ${arrow()}</a>
         </div>
 
@@ -42,7 +42,7 @@ export const partnershipsSection = {
             <span>Reserved for the organisations and people who back this vision.</span>
           </div>
           <div class="recognition__slots" data-reveal>
-            ${Array.from({ length: 4 }, () => '<div class="slot">Your organisation here</div>').join('')}
+            ${Array.from({ length: 4 }, (_, i) => `<div class="slot"><span>Reserved for a future partner</span><b>0${i + 1}</b></div>`).join('')}
           </div>
         </div>
       </div>

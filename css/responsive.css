@@ -303,18 +303,25 @@
   /* Hero */
   .hero { padding-top: 1.8rem; }
   .hero__grid { gap: 2.4rem; padding-bottom: 2.8rem; }
-  .hero__title { font-size: clamp(3.25rem, 14.5vw, 4.5rem); max-width: 8.8ch; }
-  .hero__promise { font-size: 1.2rem; }
-  .hero__text { font-size: .98rem; }
+  .hero__statement { margin-bottom: .85rem; font-size: .67rem; letter-spacing: .18em; }
+  .hero__statement::before { width: 1.65rem; }
+  .hero__title { font-size: clamp(3.15rem, 14vw, 4.35rem); max-width: 7.8ch; line-height: .84; margin-bottom: 1rem; }
+  .hero__title .line--accent { text-shadow: 2px 2px 0 var(--black); }
+  .hero__promise { font-size: 1.16rem; line-height: 1.2; margin-bottom: 1rem; }
+  .hero__text { max-width: 34ch; font-size: .94rem; line-height: 1.62; margin-bottom: 1.35rem; }
+  .hero__copy::after { display: none; }
   .hero__title .line--outline {
     -webkit-text-stroke-width: 1.5px;
   }
   .hero__actions .btn {
-    flex: 1 1 auto;
+    flex: 1 1 100%;
+    min-height: 3.15rem;
   }
   .hero__text-link {
     flex: 1 1 100%;
-    justify-content: space-between;
+    width: 100%;
+    min-height: 3.8rem;
+    padding: .65rem .7rem .65rem .9rem;
   }
   .hero__programme {
     border-radius: var(--radius-md);

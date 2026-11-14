@@ -32,7 +32,7 @@ export const footer = {
             <ul class="footer__contact">
               <li><b>Email</b><a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a></li>
               <li><b>Phone</b><a href="tel:${escapeHtml(contact.phone)}">${escapeHtml(contact.phone)}</a></li>
-              <li><b>Skills WhatsApp</b><a href="https://wa.me/2347067409576" target="_blank" rel="noopener">${escapeHtml(contact.skillsWhatsApp)}</a></li>
+              <li><b>Skills WhatsApp</b><a href="https://wa.me/2347067409576?text=Hello%20Studentico%2C%20I%20would%20like%20to%20enquire%20about%20the%20Skills%20Acquisition%20and%20Empowerment%20Programme%201.0." target="_blank" rel="noopener">${escapeHtml(contact.skillsWhatsApp)}</a></li>
               <li><b>Location</b>${escapeHtml(contact.location)}</li>
             </ul>
           </div>
