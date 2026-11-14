@@ -101,8 +101,7 @@ export const skills = [
 ];
 
 export const pricing = [
-  { id: 'freshers', label: 'Freshers', amount: '₦10,000', note: 'Programme fee' },
-  { id: 'stalites', label: 'Stalites', amount: '₦15,000', note: 'Programme fee' },
+  { id: 'all-students', label: 'All Students', amount: '₦10,000', note: 'Programme fee — all skills' },
 ];
 
 export const cohort = { target: 100, label: 'Students' };
@@ -110,8 +109,8 @@ export const cohort = { target: 100, label: 'Students' };
 export const programmeInfo = [
   { label: 'Programme', value: 'Skills Acquisition and Empowerment Programme 1.0' },
   { label: 'Cohort', value: 'First cohort — target of 100 students' },
-  { label: 'Participation', value: 'Freshers and Stalites' },
-  { label: 'Training', value: 'Details to be announced', placeholder: true },
+  { label: 'Participation', value: 'Open to all students' },
+  { label: 'Classes begin', value: '21 November 2026' },
 ];
 
 /** Facilitators: replace placeholder entries with real people. Set `placeholder: false` and fill every field. */
@@ -157,14 +156,14 @@ export const visionGroups = ['Students', 'Skilled professionals', 'Educational i
 
 /** Contact + social placeholders. Replace with real values later. */
 export const contact = {
-  email: 'Email address to be added',
-  phone: 'Phone / WhatsApp number to be added',
+  email: 'studenttico@gmail.com',
+  phone: '07071376656',
+  skillsWhatsApp: '07067409576',
   location: 'University of Medical Sciences (UNIMED), Ondo',
 };
 
 export const socials = [
-  { label: 'Instagram', href: '#', path: 'M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm5.500-3.500a1.200 1.200 0 1 0 0 2.400 1.200 1.200 0 0 0 0-2.400Z' },
-  { label: 'X (Twitter)', href: '#', path: 'M18.200 2H21l-6.500 7.400L22 22h-6l-4.700-6.100L5.800 22H3l7-8L2.500 2h6.100l4.300 5.700L18.200 2Zm-1 18h1.600L7.900 3.800H6.200L17.200 20Z' },
-  { label: 'Facebook', href: '#', path: 'M13.500 22v-8h2.700l.5-3.300h-3.200V8.600c0-1 .4-1.700 1.800-1.700h1.500V4.100c-.3 0-1.300-.1-2.400-.1-2.500 0-4.100 1.500-4.100 4.200v2.500H7.200V14h2.800v8h3.500Z' },
-  { label: 'WhatsApp', href: '#', path: 'M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm5.200 14.100c-.2.600-1.200 1.200-1.700 1.200-.4.100-1 .1-1.600-.1-.4-.1-.9-.3-1.600-.6-2.700-1.200-4.500-3.900-4.600-4.100-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.2.1.3 0 .5l-.3.500-.4.400c-.1.100-.3.300-.1.600.2.300.7 1.200 1.600 1.900 1.100 1 2 1.300 2.300 1.400.3.200.5.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400Z' },
+  { label: 'Instagram (@student_tico)', href: 'https://www.instagram.com/student_tico/', path: 'M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm5.500-3.500a1.200 1.200 0 1 0 0 2.400 1.200 1.200 0 0 0 0-2.400Z' },
+  { label: 'TikTok (@studentico)', href: 'https://www.tiktok.com/@studentico', path: 'M16 3c.3 2.1 1.5 3.4 3.7 3.6v3.1c-1.4.1-2.7-.4-3.7-1.2v6.3a5.8 5.8 0 1 1-5-5.8v3.1a2.7 2.7 0 1 0 1.9 2.6V3h3.1Z' },
+  { label: 'WhatsApp (Skills enquiries)', href: 'https://wa.me/2347067409576', path: 'M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm5.200 14.100c-.2.600-1.200 1.200-1.700 1.200-.4.100-1 .1-1.600-.1-.4-.1-.9-.3-1.600-.6-2.700-1.200-4.500-3.900-4.600-4.100-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.2.1.3 0 .5l-.3.500-.4.400c-.1.100-.3.300-.1.600.2.300.7 1.200 1.600 1.900 1.100 1 2 1.300 2.300 1.400.3.200.5.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400Z' },
 ];

@@ -30,8 +30,9 @@ export const footer = {
           <div class="footer__col footer__col--contact">
             <h4>GET IN TOUCH</h4>
             <ul class="footer__contact">
-              <li><b>Email</b>${escapeHtml(contact.email)}</li>
-              <li><b>Phone / WhatsApp</b>${escapeHtml(contact.phone)}</li>
+              <li><b>Email</b><a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a></li>
+              <li><b>Phone</b><a href="tel:${escapeHtml(contact.phone)}">${escapeHtml(contact.phone)}</a></li>
+              <li><b>Skills WhatsApp</b><a href="https://wa.me/2347067409576" target="_blank" rel="noopener">${escapeHtml(contact.skillsWhatsApp)}</a></li>
               <li><b>Location</b>${escapeHtml(contact.location)}</li>
             </ul>
           </div>

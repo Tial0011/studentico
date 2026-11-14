@@ -898,6 +898,7 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--space-4);
 }
+.pricing:has(.price-card:only-child) { grid-template-columns: 1fr; }
 .price-card {
   position: relative;
   display: grid;

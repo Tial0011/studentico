@@ -31,9 +31,10 @@ export const skillsSection = {
     const updateEnquiry = () => {
       if (!activeSkill) return;
       const category = qs('input[name="student-category"]:checked', dialog)?.value || 'freshers';
-      const amount = category === 'freshers' ? '₦10,000' : '₦15,000'; const label = category === 'freshers' ? 'Fresher' : 'Stalite';
+      const amount = '₦10,000'; const label = category === 'freshers' ? 'Fresher' : 'Stalite';
       fee.textContent = amount;
-      whatsapp.href = `https://wa.me/?text=${encodeURIComponent(`Hello Studentico, I would like to enquire about ${activeSkill.name} in the Skills Acquisition and Empowerment Programme 1.0. I am a ${label}.`)}`;
+      qsa('.skill-modal__options b', dialog).forEach((amountLabel) => { amountLabel.textContent = '₦10,000'; });
+      whatsapp.href = `https://wa.me/2347067409576?text=${encodeURIComponent(`Hello Studentico, I would like to enquire about ${activeSkill.name} in the Skills Acquisition and Empowerment Programme 1.0. I am a ${label}.`)}`;
     };
     const open = (id, trigger) => {
       const skill = skills.find((item) => item.id === id); if (!skill) return;
