@@ -1,4 +1,3 @@
-import { visionGroups } from '../data/content.js';
 import { mapHtml, escapeHtml } from '../utils/helpers.js';
 
 const steps = [
@@ -32,13 +31,6 @@ export const visionSection = {
                 </li>`)}
             </ol>
           </div>
-        </div>
-
-        <div class="vision__groups" data-reveal>
-          <p class="eyebrow">Bringing together</p>
-          <ul class="vision__groups-list">
-            ${mapHtml(visionGroups, (g) => `<li class="chip">${escapeHtml(g)}</li>`)}
-          </ul>
         </div>
       </div>
     </section>`;

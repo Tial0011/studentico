@@ -1471,7 +1471,8 @@
   max-width: 29ch;
   line-height: 1.28;
 }
-.partners__cta .btn { align-self: center; }
+.partners__cta .btn { position: relative; align-self: center; min-width: 17.5rem; padding-inline: 3rem; text-align: center; }
+.partners__cta .btn .icon { position: absolute; right: 1.35rem; }
 .recognition { padding-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--navy-line); }
 }
 
@@ -1495,12 +1496,11 @@
   font-size: 0.88rem;
   color: rgba(255, 246, 233, 0.6);
 }
-.recognition__slots {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: .9rem;
-}
+.partner-slider { overflow: hidden; margin-inline: -0.25rem; padding: .25rem; }
+.partner-slider__track { display: flex; width: max-content; gap: .9rem; animation: partner-slide 24s linear infinite; }
+@keyframes partner-slide { to { transform: translateX(calc(-50% - .45rem)); } }
 .slot {
+  width: clamp(10.5rem, 22vw, 16rem);
   aspect-ratio: 2.25 / 1;
   display: flex;
   align-items: flex-end;
@@ -1527,6 +1527,7 @@
   background: rgba(255, 165, 0, .08);
   color: var(--orange);
 }
+.partner-slider:hover .partner-slider__track { animation-play-state: paused; }
 
 /* ==========================================================================
    09 VISION

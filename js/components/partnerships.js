@@ -2,12 +2,12 @@ import { partnershipPaths } from '../data/content.js';
 import { escapeHtml, mapHtml, arrow } from '../utils/helpers.js';
 
 const pathway = (p) => `
-  <article class="pathway" data-reveal>
+  <a class="pathway" data-reveal href="https://wa.me/2347067409576?text=${encodeURIComponent(`Hello Studentico, I would like to enquire about supporting the ${p.title} partnership pathway.`)}" target="_blank" rel="noopener" aria-label="Enquire about ${escapeHtml(p.title)}">
     <span class="pathway__num" aria-hidden="true">${p.number}</span>
     <h3>${escapeHtml(p.title)}</h3>
     <p>${escapeHtml(p.text)}</p>
     <span class="pathway__arrow" aria-hidden="true">${arrow()}</span>
-  </article>`;
+  </a>`;
 
 export const partnershipsSection = {
   id: 'partnerships',
@@ -28,12 +28,12 @@ export const partnershipsSection = {
         </div>
 
         <div class="pathways" role="list" aria-label="Partnership and sponsorship pathways">
-          ${mapHtml(partnershipPaths, (p) => pathway(p).replace('<article class="pathway"', '<article role="listitem" class="pathway"'))}
+          ${mapHtml(partnershipPaths, (p) => pathway(p))}
         </div>
 
         <div class="partners__cta" data-reveal>
           <div class="partners__cta-copy"><span>Build impact with us</span><p>Help us open doors for the students who need them.</p></div>
-          <a class="btn" href="#get-in-touch">Become a Studentico partner ${arrow()}</a>
+          <a class="btn" href="https://wa.me/2347067409576?text=Hello%20Studentico%2C%20I%20would%20like%20to%20become%20a%20Studentico%20partner%20and%20support%20the%20vision." target="_blank" rel="noopener">Become a Studentico partner ${arrow()}</a>
         </div>
 
         <div class="recognition" aria-labelledby="recognition-title">
@@ -41,8 +41,10 @@ export const partnershipsSection = {
             <h3 id="recognition-title">Sponsor and partner recognition</h3>
             <span>Reserved for the organisations and people who back this vision.</span>
           </div>
-          <div class="recognition__slots" data-reveal>
-            ${Array.from({ length: 4 }, (_, i) => `<div class="slot"><span>Reserved for a future partner</span><b>0${i + 1}</b></div>`).join('')}
+          <div class="partner-slider" data-reveal aria-label="Future Studentico partner recognition">
+            <div class="partner-slider__track">
+              ${Array.from({ length: 2 }, () => ['Partners coming soon', 'Your organisation here', 'Building the pathway', 'Partner spotlight'].map((label, i) => `<div class="slot"><span>${label}</span><b>0${i + 1}</b></div>`).join('')).join('')}
+            </div>
           </div>
         </div>
       </div>

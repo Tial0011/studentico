@@ -464,7 +464,19 @@
   }
 
   /* Team */
+  .team__grid {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--space-4);
+    margin-inline: calc(-1 * var(--gutter));
+    padding: 0 var(--gutter) var(--space-4);
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .team__grid::-webkit-scrollbar { display: none; }
   .member {
+    flex: 0 0 88%;
+    scroll-snap-align: start;
     grid-template-columns: 92px 1fr;
     gap: var(--space-4);
     padding: 0.9rem;
@@ -498,6 +510,7 @@
   .partners__cta .btn {
     width: 100%;
     white-space: normal;
+    min-width: 0;
   }
   .recognition__slots {
     grid-template-columns: 1fr 1fr;

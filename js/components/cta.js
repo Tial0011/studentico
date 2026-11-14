@@ -12,7 +12,6 @@ export const ctaSection = {
         <div class="final-cta__actions" data-reveal>
           <a class="btn btn--dark" href="#skills">Explore our skills ${arrow()}</a>
           <a class="btn btn--light" href="#partnerships">Support our vision ${arrow()}</a>
-          <a class="btn btn--ghost" href="#site-footer">Get in touch ${arrow()}</a>
         </div>
       </div>
     </section>`;
