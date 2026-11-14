@@ -386,26 +386,49 @@
 .hero__text-link:hover { color: var(--orange-ink); border-color: var(--orange-ink); gap: .75rem; }
 
 .hero__programme {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  gap: 0.9rem;
-  padding: 0.7rem 1.1rem 0.7rem 0.7rem;
-  border: 1.5px dashed var(--black);
-  border-radius: var(--radius-pill);
+  gap: 1rem;
+  width: min(100%, 39rem);
+  padding: .65rem .7rem .65rem .65rem;
+  border: 1.5px solid var(--black);
+  border-radius: var(--radius-md);
   background: var(--white);
-  max-width: 100%;
+  box-shadow: 5px 5px 0 var(--orange);
+  position: relative;
+  overflow: hidden;
+}
+.hero__programme::before {
+  content: "";
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  right: -3.5rem;
+  top: -4.5rem;
+  border: 1px solid var(--orange);
+  border-radius: 50%;
+  pointer-events: none;
 }
 .hero__programme .tag {
   flex: none;
 }
-.hero__programme span:last-child {
+.hero__programme-kicker { display: grid; gap: .4rem; align-content: center; }
+.hero__programme-kicker > span:last-child { color: var(--orange-ink); font-family: var(--font-condensed); font-size: .6rem; font-weight: 600; letter-spacing: .14em; text-align: center; text-transform: uppercase; }
+.hero__programme-content { display: grid; gap: .28rem; min-width: 0; }
+.hero__programme-content strong {
   font-family: var(--font-condensed);
-  font-size: 0.8rem;
+  font-size: clamp(.78rem, 1.4vw, .92rem);
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: .09em;
   text-transform: uppercase;
   line-height: 1.25;
 }
+.hero__programme-content em { color: var(--orange-ink); font-family: var(--font-serif); font-size: 1.15em; text-transform: none; }
+.hero__programme-content > span { font-family: var(--font-condensed); font-size: .67rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+.hero__programme-content b { color: var(--orange-ink); }
+.hero__programme-arrow { width: 2.65rem; height: 2.65rem; display: grid; place-items: center; flex: none; color: var(--cream); background: var(--black); border-radius: 50%; transition: background .25s, transform .25s var(--ease); }
+.hero__programme:hover .hero__programme-arrow { color: var(--black); background: var(--orange); transform: rotate(-35deg); }
 
 .hero__visual {
   position: relative;

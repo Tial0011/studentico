@@ -28,8 +28,9 @@ export const hero = {
             <a class="hero__text-link" href="#partnerships">Support Our Vision ${arrow()}</a>
           </div>
           <div class="hero__programme" data-reveal>
-            <span class="tag tag--dark tag--dot">Programme 1.0</span>
-            <span>Studentico Skills Acquisition &amp; Empowerment Programme</span>
+            <div class="hero__programme-kicker"><span class="tag tag--dark tag--dot">Programme 1.0</span><span>Now enrolling</span></div>
+            <div class="hero__programme-content"><strong>Studentico Skills Acquisition <em>&amp;</em> Empowerment Programme</strong><span>Classes begin <b>21 Nov. 2026</b></span></div>
+            <a class="hero__programme-arrow" href="#skills" aria-label="Explore the Skills Acquisition and Empowerment Programme">${arrow()}</a>
           </div>
         </div>
 
