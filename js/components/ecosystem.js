@@ -29,7 +29,7 @@ export const ecosystemSection = {
           <div class="section-head section-head--split">
             <div style="display:grid;gap:var(--space-4)">
               <p class="eyebrow" data-reveal>Our ecosystem</p>
-              <h2 class="display-h2" id="eco-title" data-reveal>Four areas. <span class="hl-ink">One pathway.</span></h2>
+              <h2 class="display-h2" id="eco-title" data-reveal>More than skills. <span class="hl-ink">A complete student experience.</span></h2>
             </div>
             <p class="lead" data-reveal>Studentico intends to grow across four connected areas. Right now, our energy is on the first: the Skills Acquisition and Empowerment Programme.</p>
           </div>

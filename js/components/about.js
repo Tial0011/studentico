@@ -33,7 +33,7 @@ export const about = {
 
           <div class="about__ecosystem-note" data-reveal>
             <span class="tag">The big idea</span>
-            <p>Studentico is more than a conventional business. It is being built as a movement and a student-focused ecosystem.</p>
+            <p>Studentico is more than a conventional business. It is being built as a movement and a student-focused ecosystem — beginning now with practical skills and empowerment.</p>
           </div>
         </div>
       </div>
