@@ -1273,8 +1273,13 @@
    ========================================================================== */
 .fac__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: var(--space-5);
+}
+@media (min-width: 1200px) {
+  .fac__grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 .person-card {
   display: grid;
@@ -1306,6 +1311,9 @@
   gap: var(--space-3);
   padding-top: var(--space-3);
 }
+.person-card__details--single {
+  grid-template-columns: 1fr;
+}
 .person-card__details div { display: grid; gap: .25rem; }
 .person-card__details dt {
   font-family: var(--font-condensed);
@@ -1328,6 +1336,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-4);
+}
+@media (min-width: 901px) {
+  .team__grid > .member:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: 580px;
+    justify-self: center;
+    width: 100%;
+  }
 }
 .member {
   display: grid;

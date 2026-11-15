@@ -113,24 +113,127 @@ export const programmeInfo = [
   { label: 'Classes begin', value: '21 November 2026' },
 ];
 
-/** Facilitators: replace placeholder entries with a photo, confirmed name, work and brand name. */
+/** Facilitators: Confirmed cohort 1.0 facilitators across all 10 skills. */
 export const facilitators = [
-  { id: 'f1', placeholder: true, name: 'Facilitator Name', skill: 'What they do', brand: 'Brand name', photo: 'assets/images/placeholders/facilitator.svg' },
-  { id: 'f2', placeholder: true, name: 'Facilitator Name', skill: 'What they do', brand: 'Brand name', photo: 'assets/images/placeholders/facilitator.svg' },
-  { id: 'f3', placeholder: true, name: 'Facilitator Name', skill: 'What they do', brand: 'Brand name', photo: 'assets/images/placeholders/facilitator.svg' },
-  { id: 'f4', placeholder: true, name: 'Facilitator Name', skill: 'What they do', brand: 'Brand name', photo: 'assets/images/placeholders/facilitator.svg' },
+  {
+    id: 'f-barbing',
+    placeholder: false,
+    name: 'Fagbemi Opeyemi',
+    skill: 'Hairstylist & Barber',
+    brand: '',
+    photo: 'assets/images/facilitators/fagbemi-opeyemi.jpg',
+  },
+  {
+    id: 'f-hairdressing',
+    placeholder: false,
+    name: 'Olowogemo Waliyat',
+    skill: 'Hair Stylist',
+    brand: '',
+    photo: 'assets/images/facilitators/olowogemo-waliyat.jpg',
+  },
+  {
+    id: 'f-graphic-design',
+    placeholder: false,
+    name: 'Richman Owolabi',
+    skill: 'Graphic Designer',
+    brand: '',
+    photo: 'assets/images/facilitators/richman-owolabi.jpg',
+  },
+  {
+    id: 'f-makeup',
+    placeholder: false,
+    name: 'Ogunwe Motunrayo',
+    skill: 'Makeup Artist',
+    brand: '',
+    photo: 'assets/images/facilitators/ogunwe-motunrayo.jpg',
+  },
+  {
+    id: 'f-photography',
+    placeholder: false,
+    name: 'Ajiboye Ayobola',
+    skill: 'Photographer',
+    brand: '',
+    photo: 'assets/images/facilitators/ajiboye-ayobola.jpg',
+  },
+  {
+    id: 'f-videography',
+    placeholder: false,
+    name: 'Imasuen Perfect',
+    skill: 'Mobile Videographer',
+    brand: '',
+    photo: 'assets/images/facilitators/imasuen-perfect.jpg',
+  },
+  {
+    id: 'f-baking',
+    placeholder: false,
+    name: 'Olutoye-Ojo Joy',
+    skill: 'Baker',
+    brand: '',
+    photo: 'assets/images/facilitators/olutoye-ojo-joy.jpg',
+  },
+  {
+    id: 'f-crocheting',
+    placeholder: false,
+    name: 'Stella Stonewhyte',
+    skill: 'Crocheter',
+    brand: '',
+    photo: 'assets/images/facilitators/stella-stonewhyte.jpg',
+  },
+  {
+    id: 'f-web-development',
+    placeholder: false,
+    name: 'Alex Taiwo',
+    skill: 'Web Developer',
+    brand: '',
+    photo: 'assets/images/facilitators/alex-taiwo.jpg',
+  },
+  {
+    id: 'f-nails-lash',
+    placeholder: false,
+    name: 'Adeniyi Aderonke',
+    skill: 'Nail & Lash Technician',
+    brand: '',
+    photo: 'assets/images/facilitators/adeniyi-aderonke.jpg',
+  },
 ];
 
-/** Team: replace placeholder entries with real members. */
+/** Team: Studentico leadership and management team. */
 export const team = [
-  { id: 't1', placeholder: true, name: 'Team Member Name', role: 'Role to be announced',
-    text: 'A short description of this team member and what they do at Studentico.', photo: 'assets/images/placeholders/team.svg' },
-  { id: 't2', placeholder: true, name: 'Team Member Name', role: 'Role to be announced',
-    text: 'A short description of this team member and what they do at Studentico.', photo: 'assets/images/placeholders/team.svg' },
-  { id: 't3', placeholder: true, name: 'Team Member Name', role: 'Role to be announced',
-    text: 'A short description of this team member and what they do at Studentico.', photo: 'assets/images/placeholders/team.svg' },
-  { id: 't4', placeholder: true, name: 'Team Member Name', role: 'Role to be announced',
-    text: 'A short description of this team member and what they do at Studentico.', photo: 'assets/images/placeholders/team.svg' },
+  {
+    id: 't1',
+    placeholder: false,
+    name: 'Osho John',
+    role: 'Chief Executive Officer',
+    photo: 'assets/images/team/osho-john.jpg',
+  },
+  {
+    id: 't2',
+    placeholder: false,
+    name: 'Omotayo Precious',
+    role: 'Chief Operating Officer',
+    photo: 'assets/images/team/omotayo-precious.jpg',
+  },
+  {
+    id: 't3',
+    placeholder: false,
+    name: 'Soyama Abel',
+    role: 'Technology | Product Manager',
+    photo: 'assets/images/team/soyama-abel.jpg',
+  },
+  {
+    id: 't4',
+    placeholder: false,
+    name: 'Oboh Rex',
+    role: 'Monitoring and Evaluation Officer',
+    photo: 'assets/images/team/oboh-rex.jpg',
+  },
+  {
+    id: 't5',
+    placeholder: false,
+    name: 'Olutoye-Ojo Joy',
+    role: 'Founding Member',
+    photo: 'assets/images/team/olutoye-ojo-joy.jpg',
+  },
 ];
 
 export const partnershipPaths = [
