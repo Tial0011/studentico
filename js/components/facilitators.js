@@ -8,7 +8,7 @@ const card = (f) => `
     </div>
     <h3 class="person-card__name">${escapeHtml(f.name)}</h3>
     <dl class="person-card__details ${f.brand ? '' : 'person-card__details--single'}">
-      <div><dt>What they do</dt><dd>${escapeHtml(f.skill)}</dd></div>
+      <div><dt>Skills</dt><dd>${escapeHtml(f.skill)}</dd></div>
       ${f.brand ? `<div><dt>Brand name</dt><dd>${escapeHtml(f.brand)}</dd></div>` : ''}
     </dl>
   </article>`;
