@@ -11,8 +11,16 @@ export const about = {
           <p class="eyebrow" data-reveal>About Studentico</p>
           <h2 class="display-h2" id="about-title" data-reveal>The student experience <span class="hl-ink">deserves more.</span></h2>
           <div class="about__media" data-reveal>
-            <img src="assets/images/about-collage.svg" alt="Abstract illustration representing students building and sharing ideas" width="800" height="600">
-            <p class="about__quote">More than lectures. More than certificates.</p>
+            <div class="about__diagram" data-diagram tabindex="0" role="img" aria-label="Interactive three-dimensional growth pathway. Drag or use the arrow keys to rotate it.">
+              <div class="about__diagram-scene">
+                <span class="about__diagram-floor"></span>
+                <span class="about__diagram-path"></span>
+                <span class="about__diagram-cube about__diagram-cube--one"></span>
+                <span class="about__diagram-cube about__diagram-cube--two"></span>
+                <span class="about__diagram-orb"><i></i></span>
+                <span class="about__diagram-ring"></span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -38,5 +46,56 @@ export const about = {
         </div>
       </div>
     </section>`;
+  },
+  init(root) {
+    const diagram = root.querySelector('[data-diagram]');
+    if (!diagram) return;
+
+    let pointerId = null;
+    let startX = 0;
+    let startY = 0;
+    let startRotateX = -6;
+    let startRotateY = 0;
+    let rotateX = -6;
+    let rotateY = 0;
+
+    const render = () => {
+      diagram.style.setProperty('--diagram-rotate-x', `${rotateX}deg`);
+      diagram.style.setProperty('--diagram-rotate-y', `${rotateY}deg`);
+    };
+    const reset = () => { rotateX = -6; rotateY = 0; render(); };
+
+    diagram.addEventListener('pointerdown', (event) => {
+      pointerId = event.pointerId;
+      startX = event.clientX;
+      startY = event.clientY;
+      startRotateX = rotateX;
+      startRotateY = rotateY;
+      diagram.setPointerCapture(pointerId);
+      diagram.classList.add('is-dragging');
+    });
+    diagram.addEventListener('pointermove', (event) => {
+      if (event.pointerId !== pointerId) return;
+      rotateY = startRotateY + (event.clientX - startX) * 0.32;
+      rotateX = Math.max(-25, Math.min(18, startRotateX - (event.clientY - startY) * 0.13));
+      render();
+    });
+    const endDrag = (event) => {
+      if (event.pointerId !== pointerId) return;
+      if (diagram.hasPointerCapture(pointerId)) diagram.releasePointerCapture(pointerId);
+      pointerId = null;
+      diagram.classList.remove('is-dragging');
+    };
+    diagram.addEventListener('pointerup', endDrag);
+    diagram.addEventListener('pointercancel', endDrag);
+    diagram.addEventListener('keydown', (event) => {
+      const turns = { ArrowLeft: [0, -5], ArrowRight: [0, 5], ArrowUp: [4, 0], ArrowDown: [-4, 0] };
+      if (event.key === 'Home') { event.preventDefault(); reset(); return; }
+      if (!turns[event.key]) return;
+      event.preventDefault();
+      rotateX = Math.max(-25, Math.min(18, rotateX + turns[event.key][0]));
+      rotateY += turns[event.key][1];
+      render();
+    });
   },
 };

@@ -17,7 +17,18 @@ export const visionSection = {
 
         <div class="vision__grid">
           <figure class="vision__media" data-reveal>
-            <img src="assets/images/vision-campus.svg" alt="Abstract illustration of connected campuses" width="800" height="600">
+            <div class="vision__network" role="img" aria-label="Diagram of one campus connecting and expanding into a network of many campuses.">
+              <span class="vision__connection vision__connection--one"></span>
+              <span class="vision__connection vision__connection--two"></span>
+              <span class="vision__connection vision__connection--three"></span>
+              <span class="vision__connection vision__connection--four"></span>
+              <span class="vision__node vision__node--origin"><i></i></span>
+              <span class="vision__node-label">UNIMED</span>
+              <span class="vision__node vision__node--one"></span>
+              <span class="vision__node vision__node--two"></span>
+              <span class="vision__node vision__node--three"></span>
+              <span class="vision__node vision__node--four"></span>
+            </div>
             <figcaption class="vision__caption">From one campus to many.</figcaption>
           </figure>
 
