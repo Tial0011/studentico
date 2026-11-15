@@ -38,8 +38,8 @@ export const hero = {
         <div class="hero__visual" data-reveal>
           <p class="hero__visual-label">UNIMED, ONDO <span>•</span> FIRST COHORT</p>
           <div class="hero__sun" aria-hidden="true"></div>
-          <div class="hero__frame">
-            <img src="assets/images/hero-pathway.svg" alt="Abstract illustration of a graduate cap on a winding pathway towards a rising sun" width="600" height="700">
+          <div class="hero__frame" data-hero-map tabindex="0" role="img" aria-label="Interactive roadmap from the UNIMED campus through skills and opportunities to a stronger future. Drag or use arrow keys to rotate.">
+            <img src="assets/images/hero-pathway.svg" alt="A student pathway beginning at campus, moving through skills and opportunities, and rising toward a bright future" width="600" height="700">
           </div>
           <div class="hero__sticker" aria-hidden="true"><span>Skills</span><span>Programme</span><b>1.0</b></div>
           <div class="hero__badge">
@@ -58,5 +58,50 @@ export const hero = {
         <div class="ticker__track">${tickerRun()}${tickerRun()}${tickerRun()}${tickerRun()}</div>
       </div>
     </section>`;
+  },
+  init(root) {
+    const map = root.querySelector('[data-hero-map]');
+    if (!map) return;
+    let activePointer = null;
+    let startX = 0;
+    let startY = 0;
+    let startXAngle = -4;
+    let startYAngle = 0;
+    let xAngle = -4;
+    let yAngle = 0;
+    const draw = () => {
+      map.style.setProperty('--map-rotate-x', `${xAngle}deg`);
+      map.style.setProperty('--map-rotate-y', `${yAngle}deg`);
+    };
+    map.addEventListener('pointerdown', (event) => {
+      activePointer = event.pointerId;
+      startX = event.clientX; startY = event.clientY;
+      startXAngle = xAngle; startYAngle = yAngle;
+      map.setPointerCapture(activePointer);
+      map.classList.add('is-dragging');
+    });
+    map.addEventListener('pointermove', (event) => {
+      if (event.pointerId !== activePointer) return;
+      xAngle = Math.max(-22, Math.min(16, startXAngle - (event.clientY - startY) * .12));
+      yAngle = startYAngle + (event.clientX - startX) * .25;
+      draw();
+    });
+    const release = (event) => {
+      if (event.pointerId !== activePointer) return;
+      if (map.hasPointerCapture(activePointer)) map.releasePointerCapture(activePointer);
+      activePointer = null;
+      map.classList.remove('is-dragging');
+    };
+    map.addEventListener('pointerup', release);
+    map.addEventListener('pointercancel', release);
+    map.addEventListener('keydown', (event) => {
+      const change = { ArrowLeft: [0, -6], ArrowRight: [0, 6], ArrowUp: [4, 0], ArrowDown: [-4, 0] }[event.key];
+      if (event.key === 'Home') { xAngle = -4; yAngle = 0; draw(); event.preventDefault(); return; }
+      if (!change) return;
+      xAngle = Math.max(-22, Math.min(16, xAngle + change[0]));
+      yAngle += change[1];
+      draw();
+      event.preventDefault();
+    });
   },
 };
