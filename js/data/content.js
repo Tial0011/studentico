@@ -113,20 +113,12 @@ export const programmeInfo = [
   { label: 'Classes begin', value: '21 November 2026' },
 ];
 
-/** Facilitators: replace placeholder entries with real people. Set `placeholder: false` and fill every field. */
+/** Facilitators: replace placeholder entries with a photo, confirmed name, work and brand name. */
 export const facilitators = [
-  { id: 'f1', placeholder: true, name: 'Facilitator Name', skill: 'Skill to be announced',
-    bio: 'A short biography of this facilitator will appear here once their details are confirmed.',
-    background: 'Professional background to be added', photo: 'assets/images/placeholders/facilitator.svg' },
-  { id: 'f2', placeholder: true, name: 'Facilitator Name', skill: 'Skill to be announced',
-    bio: 'A short biography of this facilitator will appear here once their details are confirmed.',
-    background: 'Professional background to be added', photo: 'assets/images/placeholders/facilitator.svg' },
-  { id: 'f3', placeholder: true, name: 'Facilitator Name', skill: 'Skill to be announced',
-    bio: 'A short biography of this facilitator will appear here once their details are confirmed.',
-    background: 'Professional background to be added', photo: 'assets/images/placeholders/facilitator.svg' },
-  { id: 'f4', placeholder: true, name: 'Facilitator Name', skill: 'Skill to be announced',
-    bio: 'A short biography of this facilitator will appear here once their details are confirmed.',
-    background: 'Professional background to be added', photo: 'assets/images/placeholders/facilitator.svg' },
+  { id: 'f1', placeholder: true, name: 'Facilitator Name', skill: 'What they do', brand: 'Brand name', photo: 'assets/images/placeholders/facilitator.svg' },
+  { id: 'f2', placeholder: true, name: 'Facilitator Name', skill: 'What they do', brand: 'Brand name', photo: 'assets/images/placeholders/facilitator.svg' },
+  { id: 'f3', placeholder: true, name: 'Facilitator Name', skill: 'What they do', brand: 'Brand name', photo: 'assets/images/placeholders/facilitator.svg' },
+  { id: 'f4', placeholder: true, name: 'Facilitator Name', skill: 'What they do', brand: 'Brand name', photo: 'assets/images/placeholders/facilitator.svg' },
 ];
 
 /** Team: replace placeholder entries with real members. */

@@ -1,19 +1,16 @@
 import { facilitators } from '../data/content.js';
-import { escapeHtml, mapHtml, icon } from '../utils/helpers.js';
-
-const INFO_PATH = 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 15h-2v-6h2v6Zm0-8h-2V7h2v2Z';
+import { escapeHtml, mapHtml } from '../utils/helpers.js';
 
 const card = (f) => `
   <article class="person-card ${f.placeholder ? 'person-card--placeholder' : ''}" data-reveal>
     <div class="person-card__photo">
       <img src="${f.photo}" alt="${f.placeholder ? 'Placeholder for facilitator photograph' : `Photograph of ${escapeHtml(f.name)}`}" width="400" height="480">
-      <span class="tag person-card__skill">${escapeHtml(f.skill)}</span>
     </div>
-    <div>
-      <h3 class="person-card__name">${escapeHtml(f.name)}</h3>
-    </div>
-    <p class="person-card__bio">${escapeHtml(f.bio)}</p>
-    <div class="person-card__bg"><b>Professional background</b><span>${escapeHtml(f.background)}</span></div>
+    <h3 class="person-card__name">${escapeHtml(f.name)}</h3>
+    <dl class="person-card__details">
+      <div><dt>What they do</dt><dd>${escapeHtml(f.skill)}</dd></div>
+      <div><dt>Brand name</dt><dd>${escapeHtml(f.brand)}</dd></div>
+    </dl>
   </article>`;
 
 export const facilitatorsSection = {
@@ -27,10 +24,9 @@ export const facilitatorsSection = {
             <p class="eyebrow" data-reveal>Meet our facilitators</p>
             <h2 class="display-h2" id="fac-title" data-reveal>Learn from <span class="hl-ink">those who do.</span></h2>
           </div>
-          <p class="lead" data-reveal>The people delivering the first cohort's training will be introduced here, each teaching the skill they practise.</p>
+          <p class="lead" data-reveal>Meet the people delivering the first cohort's training and the brands behind their work.</p>
         </div>
         <div class="fac__grid">${mapHtml(facilitators, card)}</div>
-        <p class="fac__note" data-reveal>${icon(INFO_PATH, { size: 22 })}<span>Facilitator profiles will be added once confirmed. Edit <code>js/data/content.js</code> to insert photos, names, skills and biographies.</span></p>
       </div>
     </section>`;
   },

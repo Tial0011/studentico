@@ -82,13 +82,12 @@ Almost everything is in **`js/data/content.js`**.
 
 | To change…                    | Edit                                                                      |
 | ----------------------------- | ------------------------------------------------------------------------- |
-| Facilitators                  | `facilitators` array — set `photo`, `name`, `skill`, `bio`, `background`, `placeholder: false` |
+| Facilitators                  | `facilitators` array — set `photo`, `name`, `skill` (what they do), and `brand` |
 | Team members                  | `team` array — same idea                                                  |
 | Skill copy / images           | `skills` array (images live in `assets/images/skills/`)                   |
 | Prices                        | `pricing` array                                                           |
 | Contact details, social links | `contact` and `socials`                                                   |
 
-Add a new photo to `assets/images/` (e.g. `assets/images/facilitators/name.jpg`) and point `photo` at it.
 Add one object to an array to add another card — the grid adapts automatically.
 
 ## Design system at a glance
